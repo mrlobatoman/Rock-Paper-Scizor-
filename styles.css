@@ -1,0 +1,19 @@
+html, body{
+    background-color: whitesmoke;
+    height: 100%;
+  }
+
+ .main-section{
+    display:flex;
+    justify-content:space-between;
+ }
+
+.middle-side{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30vw 20px 30vw;
+    border-left-style: dotted;
+    border-right-style: dotted;
+}
+
