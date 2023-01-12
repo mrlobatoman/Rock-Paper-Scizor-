@@ -12,8 +12,16 @@ html, body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px 30vw 20px 30vw;
+    padding: 20px 18vw 20px 18vw;
     border-left-style: dotted;
     border-right-style: dotted;
 }
 
+.games-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#starters{
+    margin-bottom: 20px;
+}
