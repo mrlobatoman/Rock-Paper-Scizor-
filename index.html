@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RockPaperScizors</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <sidebar class="side-bar" id="user-side-bar">
-        <img>
-        <h2></h2>
-        <div class="wins-counter">Wins:
-        <label id="userScore">0</label>
-        <div class="grid-container">
-            <ul class="pokemon1">1</ul>
-            <ul class="pokemon2">2</ul>
-            <ul class="pokemon3">3</ul>
-            <ul class="pokemon4">4</ul>
-            <ul class="pokemon5">5</ul>
-            <ul class="pokemon6">6</ul>
-        </div>
-    </sidebar>
-    <main>
-        <h1>Team Rocket wants to Battle!</h1>
-        <p>Choose your game</p>
-        <article class="classic">
-            <h3>✊Rock, ✋Paper, ✌Scissors!</h3>
-        </article>
-        <article class="advanced">
-            <h3>Pokemon Battle!</h3>
-        </article>
-    </main>
-    <sidebar class="side-bar" id="team-rocket-side-bar">
-        <img>
-        <h2></h2>
-        <div class="wins-counter">Wins:
-        <label id="computerScore">0</label>
-        <div class="grid-container">
-            <ul class="pokemon1">1</ul>
-            <ul class="pokemon2">2</ul>
-            <ul class="pokemon3">3</ul>
-            <ul class="pokemon4">4</ul>
-            <ul class="pokemon5">5</ul>
-            <ul class="pokemon6">6</ul>
-        </div>
-    </sidebar>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>RockPaperScizors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section class="main-section">
+            <sidebar class="left-side" id="user-side-bar">
+                <img class="trainer-sprite" src="./images/trainer/trainer.png">
+                <h3 class="wins-counter">Wins:
+                <label id="userScore">0</label>
+                <div class="grid-container">
+                    <ul class="pokemon1"></ul>
+                    <ul class="pokemon2"></ul>
+                    <ul class="pokemon3"></ul>
+                    <ul class="pokemon4"></ul>
+                    <ul class="pokemon5"></ul>
+                    <ul class="pokemon6"></ul>
+                </div>
+            </h3>
+            </sidebar>
+            <main class="middle-side">
+                <h1>Team Rocket wants to Battle!</h1>
+                <h3>Choose your game:</h3>
+                <article class="games-container">
+                    <button class="game" id="starters">
+                        <h3>New Trainer</h3>
+                            <p>🔥 > 🍃</p>
+                            <p>💧 > 🔥</p>
+                            <p>🍃 > 💧</p>
+                    </button>
+                    <button class="game" id="starters">
+                        <h3>Ace Trainer</h3>
+                            <p>🔥 > 🍃 & ☠️</p>
+                            <p>💧 > 🔥 & 🪨</p>
+                            <p>🍃 > 💧 & 🪨</p>
+                            <p>☠️ > 🍃 & 💧</p>
+                            <p>🪨 > 🔥 & ☠️</p>
+                    </button>
+                </article>
+            </main>
+            <sidebar class="right-side" id="team-rocket-side-bar">
+                <img class="trainer-sprite" src="./images/team rocket/team-rocket.png">
+                <h3 class="wins-counter">Wins:
+                <label id="computerScore">0</label>
+                <div class="grid-container">
+                    <ul class="pokemon1"></ul>
+                    <ul class="pokemon2"></ul>
+                    <ul class="pokemon3"></ul>
+                    <ul class="pokemon4"></ul>
+                    <ul class="pokemon5"></ul>
+                    <ul class="pokemon6"></ul>
+                </div>
+                </h3>
+            </sidebar>
+        </section>   
+    </body>
 </html>
