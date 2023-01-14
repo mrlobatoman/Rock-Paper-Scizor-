@@ -1,3 +1,11 @@
+
+.hidden {
+    display: none !important;
+}
+/* * {
+   border: 1px solid purple; 
+} */
+
 @font-face {
     font-family: "pokemon";
     src: url(/font/pokemon.ttf);
@@ -5,7 +13,7 @@
 
 html, body{
     background-color: whitesmoke;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
   }
 
@@ -27,6 +35,7 @@ p{
  .main-section{
     display:flex;
     justify-content:space-between;
+    height: 100vh;
  }
 
 .middle-side{
@@ -36,12 +45,14 @@ p{
     padding: 20px 18vw 20px 18vw;
     border-left-style: double;
     border-right-style: double;
+    height: inherit;
     border-width: .6em;
 }
 
 .games-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .game{
@@ -56,4 +67,3 @@ p{
 #starters{
     margin-bottom: 20px;
 }
-
