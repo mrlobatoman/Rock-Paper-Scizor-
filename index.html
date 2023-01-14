@@ -14,27 +14,26 @@
                 <img class="trainer-sprite" src="./images/trainer/trainer.png">
                 <h3 class="wins-counter">Wins:
                 <label id="userScore">0</label>
-                <div class="grid-container">
-                    <ul class="pokemon1"></ul>
-                    <ul class="pokemon2"></ul>
-                    <ul class="pokemon3"></ul>
-                    <ul class="pokemon4"></ul>
-                    <ul class="pokemon5"></ul>
-                    <ul class="pokemon6"></ul>
+                <div class="pokemon-team hidden">
+                    <img class="pokemon1" src="./images/trainer/charmander front.png">
+                    <img class="pokemon2" src="./images/trainer/squirtle front.png">
+                    <img class="pokemon3" src="./images/trainer/bulbasaur front.png">
+                    <img class="pokemon4 hidden" src="./images/trainer/muk.png">
+                    <img class="pokemon5 hidden" src="./images/trainer/golem.png">
                 </div>
             </h3>
             </sidebar>
             <main class="middle-side">
-                <h1>Team Rocket wants to Battle!</h1>
-                <h3>Choose your game:</h3>
+                <h1 class="computer-message">Team Rocket wants to Battle!</h1>
+                <h3 class="choose-your-game">Choose your game:</h3>
                 <article class="games-container">
-                    <button class="game" id="easy">
+                    <button class="easy-game" id="easy">
                         <h3>New Trainer</h3>
                             <p>🔥 > 🍃</p>
                             <p>💧 > 🔥</p>
                             <p>🍃 > 💧</p>
                     </button>
-                    <button class="game" id="hard">
+                    <button class="hard-game" id="hard">
                         <h3>Ace Trainer</h3>
                             <p>🔥 > 🍃 & ☠️</p>
                             <p>💧 > 🔥 & 🪨</p>
@@ -48,16 +47,18 @@
                 <img class="trainer-sprite" src="./images/team rocket/team-rocket.png">
                 <h3 class="wins-counter">Wins:
                 <label id="computerScore">0</label>
-                <div class="grid-container">
-                    <ul class="pokemon1"></ul>
-                    <ul class="pokemon2"></ul>
-                    <ul class="pokemon3"></ul>
-                    <ul class="pokemon4"></ul>
-                    <ul class="pokemon5"></ul>
-                    <ul class="pokemon6"></ul>
+                <div class="pokemon-team-2 hidden">
+                    <img class="pokemon1" src="./images/team rocket/growlithe.png">
+                    <img class="pokemon2" src="./images/team rocket/horsea.png">
+                    <img class="pokemon3" src="./images/team rocket/bellsprout.png">
+                    <img class="pokemon4 hidden" src="./images/team rocket/arbok.png">
+                    <img class="pokemon5 hidden" src="./images/team rocket/rhydon.png">
                 </div>
                 </h3>
             </sidebar>
         </section>   
+        <script src="./trainer.js"></script>
+        <script src="./game.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>
