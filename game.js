@@ -14,4 +14,14 @@ class Game{
             this.gameType = 'hard'
         }
     }
+    updateSelections() {
+        if(this.gameType === 'easy') {
+            this.trainer.easyTurn(targetedId)
+            this.computer.easyTurn()
+        }
+        if(this.gameType === 'difficult') {
+            this.trainer.hardTurn(targetedId)
+            this.computer.hardTurn()
+        }
+    }
 }
