@@ -3,7 +3,7 @@
     display: none !important;
 }
 /* * {
-   border: 1px solid purple; 
+   border: 1px solid black; 
 } */
 
 @font-face {
@@ -32,6 +32,10 @@ p{
     margin-right: 1%;
 }
 
+.wins-counter{
+    display: flex;
+}
+
  .main-section{
     display:flex;
     justify-content:space-between;
@@ -42,7 +46,7 @@ p{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px 18vw 20px 18vw;
+    padding: 5vh 18vw 10vh 18vw;
     border-left-style: double;
     border-right-style: double;
     height: inherit;
@@ -52,7 +56,7 @@ p{
 .games-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .game{
@@ -61,9 +65,34 @@ p{
     height: 80%;
     margin: 5%;
     cursor: pointer;
-    
+}
+
+.fighting-type{
+    margin-top: 35%;
+   font-size: 48px;
 }
 
 #starters{
     margin-bottom: 20px;
 }
+
+.pokemon-team,
+.pokemon-team-2 {
+    display:flex;
+    flex-direction: column;
+}
+
+/* .display-options{
+    display: flex;
+} */
+
+
+.emoji,
+.rock-emoji,
+.poison-emoji {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30%;
+    font-size: 7vh;
+}
+
