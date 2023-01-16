@@ -32,6 +32,10 @@ p{
     margin-right: 1%;
 }
 
+.wins-counter{
+    display: flex;
+}
+
  .main-section{
     display:flex;
     justify-content:space-between;
@@ -42,7 +46,7 @@ p{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px 18vw 20px 18vw;
+    padding: 5vh 18vw 10vh 18vw;
     border-left-style: double;
     border-right-style: double;
     height: inherit;
@@ -82,14 +86,13 @@ p{
     display: flex;
 } */
 
-.fire, 
-.water,
-.grass,
-.poison,
-.rock {
+
+.emoji,
+.rock-emoji,
+.poison-emoji {
     display: flex;
     flex-direction: row;
     margin-top: 30%;
-    font-size: 8vh;
+    font-size: 7vh;
 }
 
