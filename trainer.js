@@ -1,8 +1,8 @@
 class Trainer{
     constructor(playerName){
         this.name = playerName
+        this.choice = null
         this.score = 0
-        this.choice = null;
     }
     easyTurn(targetedId){
         this.choice = targetedId || this.getRandomElement(currentGame.easyChoices)

@@ -13,7 +13,7 @@
             <sidebar class="left-side" id="user-side-bar">
                 <img class="trainer-sprite" src="./images/trainer/trainer.png">
                 <h3 class="wins-counter">Wins:
-                <label id="userScore">0</label>
+                <label class="user-score">0</label>
                 <div class="pokemon-team hidden">
                     <img class="pokemon" src="./images/trainer/charmander front.png">
                     <img class="pokemon" src="./images/trainer/squirtle front.png">
@@ -50,19 +50,21 @@
                     </section>
                 </article>
                 <section class="icon-selection hidden">
-                    <h1 class="game-result-text"></h1>
-                    <div>
+                    <h1 class="game-winner-text"></h1>
+                    <div class="i-choose-you">
                         <img class="user-chosen-icon" src="">
+                        <p>vs</p>
                         <img class="computer-chosen-icon" src="">
                     </div>
-                    <button type="button" class="change-game" id="switch-games">Change Game</button>
+                    <div>
+                        <button type="button" class="change-game" id="switch-games">Change Game</button>
+                    </div>
                 </section>
             </main>
-          
             <sidebar class="right-side" id="team-rocket-side-bar">
                 <img class="trainer-sprite" src="./images/team rocket/team-rocket.png">
                 <h3 class="wins-counter">Wins:
-                <label id="computerScore">0</label>
+                <label class="computer-score">0</label>
                 <div class="pokemon-team-2 hidden">
                     <img class="pokemon" src="./images/team rocket/growlithe.png">
                     <img class="pokemon" src="./images/team rocket/horsea.png">

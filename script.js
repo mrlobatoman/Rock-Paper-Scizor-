@@ -16,6 +16,9 @@ var battleIcons = document.querySelector('.battle-icons')
 var userChoice = document.querySelector('.user-chosen-icon')
 var computerChoice = document.querySelector('.computer-chosen-icon')
 var displayChoices = document.querySelector('.icon-selection')
+var displayWinnerText = document.querySelector('.game-winner-text')
+var userScore = document.querySelector('.user-score')
+var computerScore = document.querySelector('.computer-score')
 
 
 
@@ -25,11 +28,16 @@ changeGameButton.addEventListener('click', changeGame)
 function changeGame(){
     if(currentGame.gameType === 'easy'){
         currentGame.gameType ='hard'
+        show(battleIcons)
+        show(poisonOption)
+        show(rockOption)
     } else {
         currentGame.gameType = 'easy'
+        show(battleIcons)
+        hide(poisonOption)
+        hide(rockOption)
+
     }
-    hide(displayChoices)
-    show(battleIcons)
 }
 
 easyMode.addEventListener('click', function() {
@@ -75,7 +83,6 @@ function easyGame(){
 }
 
 function hardGame(){
-    console.log('hello')
     hide(easyMode)
     hide(difficultMode)
     hide(chooseYourGame)
@@ -115,13 +122,36 @@ function checkComputerChoice(){
     }
 }
 
+function displayWinner(){
+    if(currentGame.winner === 'trainer'){
+        displayWinnerText.innerText = 'You Won!'
+    } else if(currentGame.winner === 'computer') {
+        displayWinnerText.innerText = 'Team Rocket Won!'
+    } else {
+        displayWinnerText.innerText = 'Both Pokemon Fainted!'
+    }
+}
 
- 
+function winCounterDisplay() {
+userScore.innerText = `${currentGame.user.score}`
+computerScore.innerText = `${currentGame.computer.score}`
+}
+
+ function gameReset(){
+    displayWinnerText.innerText = null
+    show(changeText)
+    show(playerOptions)
+    hide(displayChoices)
+ }
 
 
 function displayChosen(){
     hide(playerOptions)
+    hide(changeText)
     checkUserChoice()
     checkComputerChoice()
     show(displayChoices)
+    winCounterDisplay()
+    displayWinner()
+    setTimeout(gameReset, 2750)
 }
