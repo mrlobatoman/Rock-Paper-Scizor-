@@ -1,83 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>RockPaperScizors</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RockPaperScizors</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
     <body>
-        <section class="main-section">
-            <sidebar class="left-side" id="user-side-bar">
-                <img class="trainer-sprite" src="./images/trainer/trainer.png">
-                <h3 class="wins-counter">Wins:
-                <label class="user-score">0</label>
-                <div class="pokemon-team hidden">
-                    <img class="pokemon" src="./images/trainer/charmander front.png">
-                    <img class="pokemon" src="./images/trainer/squirtle front.png">
-                    <img class="pokemon" src="./images/trainer/bulbasaur front.png">
-                    <img class="pokemon" src="./images/trainer/grimer.png">
-                    <img class="pokemon"src="./images/trainer/geodude.png">
-                </div>
+      <section class="main-section">
+        <sidebar class="left-side" id="user-side-bar">
+          <img class="trainer-sprite" src="./images/trainer/trainer.png">
+          <h3 class="wins-counter">Wins:
+          <label class="user-score">0</label>
+          <div class="pokemon-team hidden">
+            <img class="pokemon" src="./images/trainer/charmander front.png">
+            <img class="pokemon" src="./images/trainer/squirtle front.png">
+            <img class="pokemon" src="./images/trainer/bulbasaur front.png">
+            <img class="pokemon" src="./images/trainer/grimer.png">
+            <img class="pokemon"src="./images/trainer/geodude.png">
+          </div>
+          </h3>
+        </sidebar>
+        <main class="middle-side">
+          <h1 class="computer-message">Team Rocket wants to Battle!</h1>
+          <h3 class="choose-your-game">Choose your game:</h3>
+          <article class="games-container">
+            <button class="easy-game" id="easy">
+            <h3>New Trainer</h3>
+              <p>🔥 > 🍃</p>
+              <p>💧 > 🔥</p>
+              <p>🍃 > 💧</p>
+            </button>
+            <button class="hard-game" id="hard">
+            <h3>Ace Trainer</h3>
+              <p>🔥 > 🍃 & ☠️</p>
+              <p>💧 > 🔥 & 🪨</p>
+              <p>🍃 > 💧 & 🪨</p>
+              <p>☠️ > 🍃 & 💧</p>
+              <p>🪨 > 🔥 & ☠️</p>
+            </button>
+            <section class="battle-icons hidden">
+              <button type ="button" class="emoji" id="fire">🔥</button>
+              <button class="emoji" id="water">💧</button>
+              <button class="emoji" id="grass">🍃</button>
+              <button class="poison-emoji hidden" id="poison">☠️</button>
+              <button class="rock-emoji hidden" id="rock">🪨</button>
+            </section>
+          </article>
+          <section class="icon-selection hidden">
+            <h1 class="game-winner-text"></h1>
+            <div class="i-choose-you">
+              <img class="user-chosen-icon" src="">
+                <p>vs</p>
+              <img class="computer-chosen-icon" src="">
+            </div>
+            <div>
+              <button type="button" class="change-game" id="switch-games">Change Game</button>
+            </div>
+          </section>
+        </main>
+          <sidebar class="right-side" id="team-rocket-side-bar">
+            <img class="trainer-sprite" id="team-rocket-img" src="./images/team rocket/team-rocket.png">
+            <h3 class="wins-counter">Wins:
+            <label class="computer-score">0</label>
+            <section class="pokemon-team-2 hidden">
+                <img class="pokemon" src="./images/team rocket/growlithe.png">
+                <img class="pokemon" src="./images/team rocket/horsea.png">
+                <img class="pokemon" src="./images/team rocket/bellsprout.png">
+                <img class="pokemon" src="./images/team rocket/ekans.png">
+                <img class="pokemon" src="./images/team rocket/rhyhorn.png">
+            </section>
             </h3>
-            </sidebar>
-            <main class="middle-side">
-                <h1 class="computer-message">Team Rocket wants to Battle!</h1>
-                <h3 class="choose-your-game">Choose your game:</h3>
-                <article class="games-container">
-                    <button class="easy-game" id="easy">
-                        <h3>New Trainer</h3>
-                            <p>🔥 > 🍃</p>
-                            <p>💧 > 🔥</p>
-                            <p>🍃 > 💧</p>
-                    </button>
-                    <button class="hard-game" id="hard">
-                        <h3>Ace Trainer</h3>
-                            <p>🔥 > 🍃 & ☠️</p>
-                            <p>💧 > 🔥 & 🪨</p>
-                            <p>🍃 > 💧 & 🪨</p>
-                            <p>☠️ > 🍃 & 💧</p>
-                            <p>🪨 > 🔥 & ☠️</p>
-                    </button>
-                    <section class="battle-icons hidden">
-                        <button type ="button" class="emoji" id="fire">🔥</button>
-                        <button class="emoji" id="water">💧</button>
-                        <button class="emoji" id="grass">🍃</button>
-                        <button class="poison-emoji hidden" id="poison">☠️</button>
-                        <button class="rock-emoji hidden" id="rock">🪨</button>
-                    </section>
-                </article>
-                <section class="icon-selection hidden">
-                    <h1 class="game-winner-text"></h1>
-                    <div class="i-choose-you">
-                        <img class="user-chosen-icon" src="">
-                        <p>vs</p>
-                        <img class="computer-chosen-icon" src="">
-                    </div>
-                    <div>
-                        <button type="button" class="change-game" id="switch-games">Change Game</button>
-                    </div>
-                </section>
-            </main>
-            <sidebar class="right-side" id="team-rocket-side-bar">
-                <img class="trainer-sprite" src="./images/team rocket/team-rocket.png">
-                <h3 class="wins-counter">Wins:
-                <label class="computer-score">0</label>
-                <div class="pokemon-team-2 hidden">
-                    <img class="pokemon" src="./images/team rocket/growlithe.png">
-                    <img class="pokemon" src="./images/team rocket/horsea.png">
-                    <img class="pokemon" src="./images/team rocket/bellsprout.png">
-                    <img class="pokemon" src="./images/team rocket/ekans.png">
-                    <img class="pokemon" src="./images/team rocket/rhyhorn.png">
-                </div>
-                </h3>
-            </sidebar>
-        </section>   
-        <script src="./trainer.js"></script>
-        <script src="./game.js"></script>
-        <script src="./script.js"></script>
+          </sidebar>
+          <script src="./trainer.js"></script>
+          <script src="./game.js"></script>
+          <script src="./script.js"></script>
     </body>
 </html>
 
