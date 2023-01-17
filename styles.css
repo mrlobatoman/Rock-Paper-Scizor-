@@ -1,93 +1,92 @@
-.hidden {
-    display: none !important;
+.hidden{
+  display: none !important;
 }
 
 @font-face {
-    font-family: "pokemon";
-    src: url(/font/pokemon.ttf);
+  font-family: "pokemon";
+  src: url(/font/pokemon.ttf);
 }
 
-html, body{
-    background-color: whitesmoke;
-    height: 100vh;
-    overflow: hidden;
-  }
+html, 
+body{
+  background-color: whitesmoke;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "pokemon", sans-serif;
+  font-size: 1.5vw;
+}
 
-h1,
-h2,
-h3,
-p{
-    font-family: "pokemon", sans-serif;
-    font-size: 1em;
+.main-section{
+  display:flex;
+  justify-content:space-between;
+  height: 100vh;
+}
+ 
+.left-side{
+  width: 15vw;
+  border-right-style: double;
+  border-width: .8em;   
 }
 
 .right-side{
-    margin-left: 1%;
-}
-.left-side{
-    margin-right: 1%;
+  width: 15vw;
+  border-left-style: double;
+  border-width: .8em;   
 }
 
 .wins-counter{
-    display: flex;
-}
-
- .main-section{
-    display:flex;
-    justify-content:space-between;
-    height: 100vh;
- }
-
-.middle-side{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 5vh 18vw 10vh 18vw;
-    border-left-style: double;
-    border-right-style: double;
-    height: inherit;
-    border-width: .6em;
-}
-
-.games-container,
-.i-choose-you{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.game{
-    border: 5px black double;
-    width: 70%;
-    height: 80%;
-    margin: 5%;
-    cursor: pointer;
-}
-
-.fighting-type{
-    margin-top: 35%;
-   font-size: 48px;
-}
-
-#starters{
-    margin-bottom: 20px;
+  display: flex;
 }
 
 .pokemon-team,
 .pokemon-team-2 {
-    display:flex;
-    flex-direction: column;
+  display:flex;
+  flex-direction: column;
+}
+
+.middle-side{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: inherit;
+}
+
+.games-container,
+.i-choose-you{
+  margin-top: 33px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.game-winner-text{
+  font-size: 15px;
+}
+
+.change-game{
+  margin-top: 25%;
+}
+
+.game{
+  width: 70%;
+  height: 80%;
+  margin: 5%;
+  cursor: pointer;
+}
+
+.fighting-type{
+  margin-top: 35%;
+  font-size: 48px;
 }
 
 .emoji,
 .rock-emoji,
 .poison-emoji {
-    display: flex;
-    flex-direction: row;
-    margin-top: 30%;
-    font-size: 7vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30%;
+  font-size: 7vh;
 }
 
-.change-game{
-    margin-top: 25%;
-}
+
+
