@@ -28,8 +28,24 @@ class Game{
     determineWinner() {
         if(this.user.choice === this.computer.choice){
             this.winner = null
-        } else if(this.user.choice === 'fire' && (this.computer.choice === 'grass' || 'poison')) {
+        } else if(this.user.choice === 'fire' && (this.computer.choice === 'grass' || this.computer.choice === 'poison')) {
             this.user.winRound()
+            return 'trainer'
+        } else if(this.user.choice === 'water' && (this.computer.choice === 'fire' || this.computer.choice === 'rock')) {
+            this.user.winRound()
+            return 'trainer'
+        }  else if(this.user.choice === 'grass' && (this.computer.choice === 'water' || this.computer.choice === 'rock')) {
+            this.user.winRound()
+            return 'trainer'
+        }  else if(this.user.choice === 'poison' && (this.computer.choice === 'grass' || this.computer.choice === 'water')) {
+            this.user.winRound()
+            return 'trainer'
+        }  else if(this.user.choice === 'rock' && (this.computer.choice === 'fire' || this.computer.choice === 'poison')) {
+            this.user.winRound()
+            return 'trainer'
+        } else {
+            this.computer.winRound()
+            return 'computer'
         }
     }
 }
